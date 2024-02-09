@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+color: #000;
+border: none;
+}
+
+#toolWidget{
+background-color: #302c34;
+border-radius: 7px;
+}
+
+#listWidget{
+background-color: #302c34;
+border-radius: 7px;
+}
+
+#backgroundWidget{
+background-color: #454049;
+}
+
+#headWidget{
+background-color: #302c34;
+border-radius: 5px;
+}</string>
+   </property>
+   <widget class="QWidget" name="backgroundWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>351</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="toolWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>299</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="backMusicButton">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/arrow-left-circle.svg</normaloff>:/white icons/white/arrow-left-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>22</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="playMusicButton">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/play-circle.svg</normaloff>:/white icons/white/play-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="nextMusicButton">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/arrow-right-circle.svg</normaloff>:/white icons/white/arrow-right-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>22</width>
+          <height>22</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/shuffle.svg</normaloff>:/white icons/white/shuffle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/folder.svg</normaloff>:/white icons/white/folder.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>281</width>
+       <height>251</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="headWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>0</y>
+       <width>321</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>235</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="powerButton">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/power.svg</normaloff>:/white icons/white/power.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="collapseButton">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/minus-circle.svg</normaloff>:/white icons/white/minus-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="icon">
+         <iconset resource="icons/resources.qrc">
+          <normaloff>:/white icons/white/x-circle.svg</normaloff>:/white icons/white/x-circle.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
